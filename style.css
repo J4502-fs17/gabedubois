@@ -51,3 +51,48 @@ body {
   background-color: #7a991a;
   text-decoration: underline;
 }
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 600px) {
+	.container {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 800px) {
+
+	.item-1 {
+		margin-right: auto;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 1em;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: #fff;
+	background: #C0C0C0;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.container {
+	padding: 10px;
+	background: #fff;
+  	border-radius: 5px;
+	margin: 45px auto;
+  	box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+.item {
+	color: #000;
+	padding: 15px;
+	margin: 5px;
+	background: #f1b89d;
+	border-radius: 3px;
+}
