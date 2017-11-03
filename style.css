@@ -96,3 +96,61 @@ body {
 	background: #f1b89d;
 	border-radius: 3px;
 }
+
+@media screen and (min-width:600px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "a b "
+        "c d ";
+
+  }
+
+  .section1 {
+    grid-area: a;
+  }
+
+  .section2 {
+    grid-area: b;
+  }
+
+  .section3 {
+    grid-area: c;
+  }
+
+  .section4 {
+    grid-area: d;
+  }
+
+}
+
+@media screen and (min-width:900px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "c a b "
+        "d d d ";
+
+  }
+
+  .section1 {
+    grid-area: a;
+  }
+
+  .section2 {
+    grid-area: b;
+  }
+
+  .section3 {
+    grid-area: c;
+  }
+
+  .section4 {
+    grid-area: d;
+  }
+
+}
